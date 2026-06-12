@@ -19,8 +19,7 @@ CHIPSET = {
 def build_knowledge_index():
     print("1. extracting raw text from PDFs")
     docs = ingest_pdf_directory_pymupdf(DATA_DIR)
-    print(docs)
-
+    # print(docs)
 
     print("2. chunking text for optimal embeddings resolutions")
     splitter = RecursiveCharacterTextSplitter(chunk_size=750, chunk_overlap=150)
