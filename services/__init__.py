@@ -1,0 +1,1 @@
+from .services import ingest_pdf_directory
