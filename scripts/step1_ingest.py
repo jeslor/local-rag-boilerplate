@@ -17,7 +17,6 @@ DEVICES = {
     'Apple_silicon':"mps",
 }
 
-
 def ingest_pdf_directory(directory_path: str) -> list[Document]:
     documents = []
     path = Path(directory_path)
@@ -70,11 +69,6 @@ def ingest_pdf_directory(directory_path: str) -> list[Document]:
 
     print(f"\n--- Ingestion Summary: Successfully parsed {success_count} PDFs. Failed on {error_count} PDFs. ---")
     return documents
-
-
-
-
-
 
 def build_knowledge_index():
     print("1. extracting raw text from PDFs")
