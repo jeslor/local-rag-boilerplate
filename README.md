@@ -1,5 +1,9 @@
 # 🧠 Local RAG Boilerplate (Universal Vector Engine)
 
+<p align="center">
+  <img src="assets/rag.jpg" alt="An entirely local, secure, and domain-agnostic Retrieval-Augmented Generation (RAG) framework." width="900">
+</p>
+
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://python.org)
 [![Framework](https://img.shields.io/badge/LangChain-Integration-green.svg)](https://python.langchain.com/)
 [![Database](https://img.shields.io/badge/VectorStore-ChromaDB-orange.svg)](https://github.com/chroma-core/chroma)
