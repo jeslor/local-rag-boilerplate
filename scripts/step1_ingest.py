@@ -1,7 +1,7 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
-from services import ingest_pdf_directory, ingest_pdf_directory_pymupdf
+from services import ingest_pdf_directory
 
 
 
@@ -18,7 +18,7 @@ CHIPSET = {
 
 def build_knowledge_index():
     print("1. extracting raw text from PDFs")
-    docs = ingest_pdf_directory_pymupdf(DATA_DIR)
+    docs = ingest_pdf_directory(DATA_DIR)
     # print(docs)
 
     print("2. chunking text for optimal embeddings resolutions")

@@ -1,1 +1,1 @@
-from .services import ingest_pdf_directory, ingest_pdf_directory_pymupdf
+from .services import ingest_pdf_directory
