@@ -117,3 +117,15 @@ Once your local SQLite matrix database is compiled, execute queries instantly wi
 ````
     python scripts/step2_query.py
 ````
+### 💬 Phase 3: Interactive Querying (Ask Your Knowledge Base)
+Once the vector database has been built and populated, you can begin interacting with your private knowledge system through natural language queries.
+The system uses a semantic similarity search over your local ChromaDB vector store, powered by BAAI/bge-large-en-v1.5, to retrieve the most contextually relevant document chunks.
+ 
+🧠 Start Asking Questions depending on the documents you fed in
+```aiignore
+Search for something: What does the document say about data privacy?
+Search for something: Summarize the onboarding process
+Search for something: What are the compliance requirements for GDPR?
+```
+
+
